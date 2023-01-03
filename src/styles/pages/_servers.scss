@@ -1,0 +1,272 @@
+.servers {
+  max-width: 990px;
+  // background: #33373e;
+  border-radius: 5px;
+  padding: 15px;
+  overflow: auto;
+  margin: auto;
+  border-radius: 4px;
+
+  .servers-next-add {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    background: #1e4db7;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    gap: 10px;
+    cursor: pointer;
+    .servers-add {
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .servers-add-text {
+      font-size: 14px;
+    }
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+    border-collapse: collapse;
+    thead {
+      background-color: #1e4db7;
+      color: #fff;
+      th {
+        padding: 15px;
+      }
+    }
+  }
+  table th,
+  table td {
+    border: 1px solid #00000017;
+    padding: 10px 10px;
+  }
+  table {
+    tbody {
+      tr {
+        background-color: #fff;
+        transition: 0.3s ease-in-out;
+        &:nth-child(even) {
+          background-color: rgb(238, 238, 238);
+        }
+        // &:hover {
+        //   filter: drop-shadow(0px 2px 6px #0002);
+        // }
+        td {
+          //   img {
+          //     display: inline-block;
+          //     width: 60px;
+          //     height: 60px;
+          //     object-fit: cover;
+          //     border-radius: 50%;
+          //     border: 4px solid #fff;
+          //     box-shadow: 0 2px 6px #0003;
+          //   }
+          .action_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .servers-valid {
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 4px;
+              background: #12a721;
+              color: #ffffff;
+              padding: 5px;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                background: #34ef47;
+              }
+            }
+            .servers-cancel {
+              font-size: 12px;
+              border: none;
+              outline: none;
+              border-radius: 4px;
+              background: #ff0000;
+              color: #ffffff;
+              padding: 5px;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                background: #ad0000;
+              }
+            }
+            // a {
+            //   text-decoration: none;
+            //   color: #444;
+            //   background: #fff;
+            //   border: 1px solid;
+            //   display: inline-block;
+            //   padding: 7px 20px;
+            //   font-weight: bold;
+            //   border-radius: 3px;
+            //   transition: 0.3s ease-in-out;
+            //   &:nth-child(1) {
+            //     border-color: #26a69a;
+            //   }
+
+            //   &:nth-child(2) {
+            //     border-color: orange;
+            //   }
+            //   &:hover {
+            //     box-shadow: 0 3px 8px #0003;
+            //   }
+            // }
+            .servers-delete {
+              font-size: 20px;
+              color: #ff0000;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+
+            select {
+              padding: 10px;
+              font-size: 13px;
+            }
+
+            .servers-name {
+              font-size: 12px;
+            }
+
+            .servers-cat {
+              font-size: 12px;
+            }
+
+            .servers-price {
+              font-size: 12px;
+            }
+
+            .servers-num {
+              font-size: 12px;
+              font-weight: 900;
+            }
+
+            .servers-edit {
+              font-size: 20px;
+              color: #f98711;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+      .success {
+        color: #34ef47;
+        font-size: 14px;
+      }
+      .no-success {
+        color: #ff0000;
+        font-size: 14px;
+      }
+      .quickly {
+        color: #1652f0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.server-currency {
+  div {
+    background: #9ca3b9;
+    color: #ffffff;
+    display: flex;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    user-select: none;
+    div {
+      background: #1e4db7;
+      color: #ffffff;
+
+      .servers-edit {
+        font-size: 20px;
+        color: #f98711;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .servers-delete {
+        font-size: 19px;
+        color: #ff0000;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.currency-input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px 5px;
+  color: #000;
+}
+
+.servers-update-rate {
+  font-size: 20px;
+  color: #34aa40;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.servers-cancel-rate {
+  font-size: 20px;
+  color: #ff0000;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.server-euro-text,
+.server-usdt-text,
+.server-dollar-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.servers_selec {
+  border: none;
+  outline: none;
+  padding: 10px;
+}

@@ -1,0 +1,65 @@
+.addnewdofusorder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form_addnewsolde {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex-wrap: wrap;
+        label {
+          font-size: 16px;
+          padding: 5px 0px;
+          color: #75758b;
+        }
+        input {
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          background: #ffffff;
+          color: #75758b;
+          font-size: 16px;
+          padding: 10px;
+        }
+
+        select {
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          background: #ffffff;
+          color: #75758b;
+          font-size: 16px;
+          padding: 5px;
+          min-width: 200px;
+        }
+      }
+    }
+    .btn-confirm-solde {
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background: #1e4db7;
+      color: #ffffff;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      &:hover {
+        background: #0d2753;
+      }
+    }
+  }
+}

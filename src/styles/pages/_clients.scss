@@ -1,0 +1,140 @@
+.clients {
+  div {
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .infos-user-search {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      input {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background: #ffffff;
+        color: #75758b;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .search_addnewsolde {
+        position: absolute;
+        font-size: 24px;
+        color: #75758b;
+        left: 88%;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: #9ca3b9;
+        }
+      }
+    }
+  }
+  .table_responsive {
+    max-width: 950px;
+    // background: #33373e;
+    border-radius: 5px;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+    table {
+      width: 100%;
+      font-size: 14px;
+      color: #444;
+      white-space: nowrap;
+      border-collapse: collapse;
+      thead {
+        background-color: #1e4db7;
+        color: #fff;
+        th {
+          padding: 10px;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+      tbody {
+        tr {
+          background-color: #fff;
+          transition: 0.3s ease-in-out;
+          &:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+          td {
+            font-size: 0.8rem;
+            font-weight: bold;
+            img {
+              display: inline-block;
+              width: 60px;
+              height: 60px;
+              object-fit: cover;
+              border-radius: 50%;
+              border: 2px solid #fff;
+              box-shadow: 0 2px 6px #0003;
+            }
+            .action_btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              .profil-detail-user {
+                transition: 0.3s ease-in-out;
+                margin-top: 30px;
+                &:hover {
+                  transform: scale(1.1);
+                }
+                .servers-view {
+                  font-size: 21px;
+                  color: #1e4db7;
+                  cursor: pointer;
+                  margin-right: 5px;
+                }
+              }
+
+              .servers-delete {
+                font-size: 20px;
+                color: #cb011b;
+                cursor: pointer;
+                margin-right: 5px;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+              .servers-add {
+                font-size: 20px;
+                color: #e8b129;
+                cursor: pointer;
+                margin-right: 5px;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+
+          &:hover {
+            filter: drop-shadow(0px 2px 6px #0002);
+          }
+        }
+      }
+    }
+
+    table th,
+    table td {
+      border: 1px solid #00000017;
+      padding: 10px;
+    }
+  }
+
+  .client-add-dofus-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

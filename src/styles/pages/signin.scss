@@ -1,0 +1,96 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .signin-title {
+    display: flex;
+    font-size: 24px;
+    background: #1652f0;
+    color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    max-width: 350px;
+    letter-spacing: 1.5px;
+    margin-right: 200px;
+    @media (max-width: 767px) {
+      margin-right: 0px;
+    }
+
+    @media (max-width: 360px) {
+      max-width: 280px;
+      font-size: 18px;
+    }
+  }
+
+  form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    background: #1652f0;
+    color: #f4f4f4;
+    margin-right: 200px;
+    @media (max-width: 767px) {
+      margin-right: 0px;
+    }
+    @media (max-width: 360px) {
+      padding: 15px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #1652f0;
+        min-width: 300px;
+        font-size: 17px;
+        padding: 10px;
+        outline: none;
+        color: #000;
+        
+        @media (max-width: 360px) {
+          font-size: 16px;
+          min-width: 250px;
+        }
+      }
+    }
+  }
+  .signin-submit {
+    width: 100%;
+    background: #1a97f5;
+    color: #f4f4f4;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background: #1af5f5;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.admin-signin-errors {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  align-self: center;
+  color: #ff0000;
+  max-width: 300px;
+}

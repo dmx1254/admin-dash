@@ -1,0 +1,70 @@
+.profidetailProfil {
+  .my-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    @media (max-width: 593px) {
+      flex-direction: column;
+    }
+
+    .my-infos-user-profil {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: #1e4db7;
+      padding: 20px;
+      border-radius: 7px;
+      label {
+        color: #76bef2;
+        border-radius: 5px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+
+    .my-infos-labels {
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      gap: 48px;
+      background: #1e4db7;
+      padding: 20px;
+      border-radius: 7px;
+      .infos-payment {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        label {
+          color: #76bef2;
+          border-radius: 5px;
+        }
+
+        .infos-payment-fields {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+
+          label {
+            color: #76bef2;
+            border-radius: 5px;
+          }
+          .modify-profil-sepa {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            label {
+              color: #76bef2;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
